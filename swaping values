@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<math.h>
+void swappingTwoNumbers(int*,int*);
+int main(void) 
+{
+    int n;
+	scanf("%d",&n);
+	int m=n+6;
+	printf("before swappingTwoNumbers%d\t%d\t",n,m);
+	swappingTwoNumbers(&n,&m);
+	printf("after swappingTwoNumbers%d\t%d\t",n,m);
+	return 0;
+}
+void swappingTwoNumbers(int *a,int *b)
+{
+    int t=*a;
+    *a=*b;
+    *b=t;
+    
+}
+
+
+
